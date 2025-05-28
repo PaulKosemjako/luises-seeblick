@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// 👉 unbedingt base setzen!
 export default defineConfig({
+  base: '/luises-seeblick/',  // ⬅️ Name deines Repos!
   plugins: [react()],
-  base: '/luises-seeblick/', // 💡 Wichtig für GitHub Pages
 })
