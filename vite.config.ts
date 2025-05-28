@@ -7,11 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    rollupOptions: {
-      input: 'src/main.tsx',
-      output: {
-        entryFileNames: 'assets/main.js'
-      }
-    }
   }
 });
