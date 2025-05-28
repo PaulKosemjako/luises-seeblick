@@ -3,17 +3,17 @@ import styles from "./home.module.scss";
 import { Link } from "react-router-dom";
 
 const images = [
-  "/luises-seeblick.jpg",
-  "/luises-seeblick1.jpg",
-  "/luises-seeblick2.jpg",
-  "/luises-seeblick3.jpg",
-  "/luises-seeblick4.jpg",
-  "/luises-seeblick5.jpg",
-  "/luises-seeblick6.jpg",
-  "/luises-seeblick7.jpg",
-  "/luises-seeblick8.jpg",
-  "/luises-seeblick9.jpg",
-  "/luises-seeblick10.jpg"
+  "/luises-seeblick/luises-seeblick.jpg",
+  "/luises-seeblick/luises-seeblick1.jpg",
+  "/luises-seeblick/luises-seeblick2.jpg",
+  "/luises-seeblick/luises-seeblick3.jpg",
+  "/luises-seeblick/luises-seeblick4.jpg",
+  "/luises-seeblick/luises-seeblick5.jpg",
+  "/luises-seeblick/luises-seeblick6.jpg",
+  "/luises-seeblick/luises-seeblick7.jpg",
+  "/luises-seeblick/luises-seeblick8.jpg",
+  "/luises-seeblick/luises-seeblick9.jpg",
+  "/luises-seeblick/luises-seeblick10.jpg"
 ];
 
 const Home = () => {
@@ -49,7 +49,7 @@ const Home = () => {
         </div>
       </div>
     </section><section className={styles.aktion}>
-      <img src="/brunch.jpg" />
+      <img src="brunch.jpg" />
       <img src="himmelfahrt.jpg" />
       <img src="pfingsbrunch.jpg" />
       <img src="schlager.jpg" />
