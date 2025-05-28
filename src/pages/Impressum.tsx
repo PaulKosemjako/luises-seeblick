@@ -30,6 +30,11 @@ const Impressum = () => {
       </p>
 
       <p>
+        <strong>USt-IdNr.</strong><br />
+        DE450285121
+      </p>
+
+      <p>
         <strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br />
         Nadine Eberhard<br />
         Adresse wie oben
