@@ -1,0 +1,33 @@
+.contact {
+  padding: 2rem;
+  background-color: #fdfdfd;
+  color: #222;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .info {
+    margin-bottom: 2rem;
+
+    p, ul {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .map {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}

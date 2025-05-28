@@ -1,0 +1,105 @@
+.home {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    z-index: 1;
+  }
+
+  .content {
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    padding: 2rem;
+    z-index: 2;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 0.5rem 0;
+    }
+
+    .ctaButton {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.6rem;
+      background-color: #ffffff;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+}
+
+.aktion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home {
+    background-position: center center;
+
+    .overlay {
+      padding: 1rem;
+    }
+
+    .content {
+      padding: 1rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .aktion {
+    img {
+      width: 90%;
+    }
+  }
+}

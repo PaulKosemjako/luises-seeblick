@@ -1,0 +1,150 @@
+.gallery {
+  padding: 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.categoryButtons {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+
+  button {
+    background-color: #eee;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  .active {
+    background-color: #333;
+    color: white;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.thumbnail {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+/* ----------------- Lightbox ------------------ */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.lightboxContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 90vw;
+  max-height: 90vh;
+  flex-direction: row;
+}
+
+.lightboxImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  z-index: 1001;
+}
+
+/* Buttons (close, prev, next) */
+.close,
+.prev,
+.next {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1002;
+  padding: 0.5rem 1rem;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.close {
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.prev {
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+button:hover {
+  color: #ffcc00;
+}
+
+/* ----------------- Mobile Anpassungen ------------------ */
+@media (max-width: 600px) {
+  .lightboxContent {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .lightboxImage {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+
+  .close,
+  .prev,
+  .next {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
