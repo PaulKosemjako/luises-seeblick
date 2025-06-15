@@ -50,7 +50,6 @@ const Home = () => {
       </div>
     </section><section className={styles.aktion}>
       <img src="brunch.jpg" />
-      <img src="pfingsbrunch.jpg" />
       <img src="schlager.jpg" />
     </section></>
 
