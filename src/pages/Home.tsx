@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./home.module.scss";
 import { Link } from "react-router-dom";
 import PopupMessage from "./PopupMessage";
+import SilversterPopup from "./SilvesterPopup";
 
 const images = [
   "./luises-seeblick.jpg",
@@ -29,7 +30,10 @@ const Home = () => {
   }, []);
 
   return (
-    <><PopupMessage /><>
+
+    <>
+    <SilversterPopup />
+    <PopupMessage /><>
     <section
       className={styles.home}
       style={{
