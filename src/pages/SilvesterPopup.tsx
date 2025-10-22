@@ -51,6 +51,7 @@ const SilversterPopup = () => {
                 <li>💺 Es sind noch Plätze frei!</li>
                 <li>💶 Preis: <strong>139,90 €</strong> pro Person</li>
             </ul>
+            <p className={styles.noFirework}>Bitte beachten Sie:Aus Rücksicht auf unsere Gäste in der Seniorenresidenz findet kein Feuerwerk statt.</p>
             <div className={styles.countdown}>⌛ Countdown: {countdown}</div>
         </div>
     );
