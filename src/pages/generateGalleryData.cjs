@@ -16,7 +16,7 @@ fs.readdirSync(galleryDir).forEach((folderName) => {
 
     images.forEach(image => {
       data.push({
-        src: `/luises-seeblick/images/gallery/${folderName}/${image}`,
+        src: `/images/gallery/${folderName}/${image}`,
         alt: `${folderName} - ${image}`,
         category: folderName
       });

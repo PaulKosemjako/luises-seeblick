@@ -12,9 +12,10 @@ const Contact = () => {
         <p><strong>E-Mail:</strong> <a href="mailto:luisesseeblick@gmail.com">luisesseeblick@gmail.com</a></p>
         <p><strong>Öffnungszeiten:</strong></p>
         <ul>
-          <li>Mo–Sa: 12:00 – 18:00 Uhr</li>
-          <li>Warme Küche bis 16.00 Uhr</li>
-          <li>Brunch: 11:00 – 14:00 Uhr</li>
+          <li>Montag: Ruhetag</li>
+          <li>Di-Sa: 12:00 - 20:00 Uhr</li>
+          <li>So: 12:00 - 16:00 Uhr</li>
+          <li>Brunch: 11:00 – 14:00 Uhr (Siehe Termine)</li>
         </ul>
       </div>
 
