@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .popup {
   position: fixed;
   top: 10%;
@@ -92,7 +94,7 @@
   100% {
     transform: scale(0);
     opacity: 0;
-    top: calc(100% * random());
-    left: calc(100% * random());
+    top: calc(90% * math.random());
+    left: calc(90% * math.random());
   }
 }
