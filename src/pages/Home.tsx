@@ -32,7 +32,6 @@ const Home = () => {
   return (
 
     <>
-    <SilversterPopup />
     <PopupMessage /><>
     <section
       className={styles.home}
@@ -56,6 +55,9 @@ const Home = () => {
       </div>
     </section><section className={styles.aktion}>
         <img src="brunch.jpg" />
+      </section>
+      <section className={styles.aktion}>
+        <img src="XMas_Flyer.jpg" />
       </section>
       <section className={styles.aktion}>
         <img src="weihnachtsgutschein.jpg" />
